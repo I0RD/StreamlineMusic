@@ -5,6 +5,7 @@ import com.app.StreamlineMusic.payload.SongDto;
 import com.app.StreamlineMusic.service.PlaylistService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,6 +36,7 @@ public class PlaylistController {
         playlistService.addSongToPlaylist(playlist_id,song_id);
         return ResponseEntity.ok("Song added to playlist");
     }
+    @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/{playlist_id}")
     public ResponseEntity<List<SongDto>>getAllSongsInPlaylist(@PathVariable(name = "playlist_id")long playlistId){
         return ResponseEntity.ok(playlistService.getAllSongsInPlaylist(playlistId));

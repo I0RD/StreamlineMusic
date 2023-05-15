@@ -118,6 +118,11 @@ public class SongServiceImpl implements SongService {
         return songResponse;
     }
 
+    @Override
+    public List<Song> getAllSongs() {
+        return songRepository.findAll();
+    }
+
     private Song mapToSong(SongDto songDto){
 
         Song song = new Song();

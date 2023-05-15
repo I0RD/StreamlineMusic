@@ -1,5 +1,6 @@
 package com.app.StreamlineMusic.controller;
 
+import com.app.StreamlineMusic.entity.Song;
 import com.app.StreamlineMusic.payload.SongDto;
 import com.app.StreamlineMusic.payload.SongResponse;
 import com.app.StreamlineMusic.service.SongService;
@@ -7,11 +8,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/songs")
 public class SongController {
 
-    private SongService songService;
+    private static SongService songService;
 
     public SongController(SongService songService){
         this.songService=songService;
@@ -39,5 +42,8 @@ public class SongController {
             @RequestParam(value = "sortDir", defaultValue = "asc",required = false)String sortDir
     ){
         return ResponseEntity.ok(songService.showSongsByTitle(title,pageNo,pageSize,sortBy,sortDir));
+    }
+    public static List<Song> getAllSongs() {
+        return songService.getAllSongs();
     }
 }
