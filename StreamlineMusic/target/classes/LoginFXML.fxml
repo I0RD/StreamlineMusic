@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+    <GridPane fx:controller="com.app.StreamlineMusic.controller.FxmlController"
+              xmlns:fx="http://javafx.com/fxml"
+              alignment="center" vgap="10" stylesheets="login.css">
+        <Label  text="User Name: " GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="userName" GridPane.columnSpan="1" GridPane.rowIndex="2"/>
+        <Label text="Password" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <PasswordField fx:id="password" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <HBox spacing="5" alignment="bottom_right"
+          GridPane.columnIndex="0" GridPane.rowIndex="5">
+        <Button fx:id="signUp" text="Sign Up"/>
+        <Button fx:id="signIn" text="Sign In"/>
+    </HBox>
+    </GridPane>
