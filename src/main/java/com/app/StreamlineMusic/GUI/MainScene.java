@@ -3,12 +3,10 @@ package com.app.StreamlineMusic.GUI;
 import com.app.StreamlineMusic.controller.FxmlController;
 import com.app.StreamlineMusic.controller.SongController;
 import com.app.StreamlineMusic.entity.Song;
-import com.app.StreamlineMusic.service.SongService;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Insets;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.TabPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 
@@ -35,12 +33,12 @@ public class MainScene {
             ass.add(new Label(songs.get(i).getGenre()),0,1);
             ass.add(new Label(songs.get(i).getAuthor()),1,0);
             HBox hBox=new HBox(ass);
-            hBox.setOnMouseClicked(mouseEvent -> {
-                fxmlController.control_music.setDisable(false);
-                fxmlController.control_music.setVisible(true);
-            });
             fxmlController.grid.add(hBox,0,i+1);
         }
+        fxmlController.grid.setOnMouseClicked(mouseEvent -> {
+            fxmlController.control_music.setDisable(false);
+            fxmlController.control_music.setVisible(true);
+        });
     }
 
     public Parent getMainParent(){

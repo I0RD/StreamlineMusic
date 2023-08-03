@@ -3,6 +3,7 @@ package com.app.StreamlineMusic.GUI;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class SceneManager {
@@ -11,12 +12,14 @@ public class SceneManager {
     static MainScene mainScene;
     static LoginScene loginScene;
     static RegisterScene registerScene;
-
-    public SceneManager() throws IOException {
-        loginScene=new LoginScene(new FXMLLoader(getClass().getResource("/LoginFXML.fxml")));
-        registerScene=new RegisterScene(new FXMLLoader(getClass().getResource("/RegisterFXML.fxml")));
-        mainScene=new MainScene(new FXMLLoader(getClass().getResource("/MainFXML.fxml")));
-        loginScene.fxmlController.signUp.setOnAction(actionEvent -> setScene("REGISTER"));
+    static {
+        try {
+            mainScene = new MainScene(new FXMLLoader(SceneManager.class.getResource("/MainFXML2.fxml")));
+            loginScene=new LoginScene(new FXMLLoader(SceneManager.class.getResource("/LoginFXML2.fxml")));
+            registerScene=new RegisterScene(new FXMLLoader(SceneManager.class.getResource("/RegisterFXML2.fxml")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static Scene setScene(String name){

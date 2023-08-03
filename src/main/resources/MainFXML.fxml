@@ -4,7 +4,7 @@
 
     <GridPane xmlns:fx="http://javafx.com/fxml"
               fx:controller="com.app.StreamlineMusic.controller.FxmlController"
-              alignment="TOP_CENTER" vgap="10" stylesheets="main.css" >
+              hgap="20" stylesheets="main.css">
     <HBox spacing="5" GridPane.rowIndex="0" GridPane.columnIndex="0">
         <Button text="menu"/>
         <TextField id="search" text="SZUKAJ"/>

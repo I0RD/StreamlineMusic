@@ -17,6 +17,9 @@ public class LoginScene  {
     public LoginScene(FXMLLoader loader) throws IOException {
         loginScene=loader.load();
         fxmlController=loader.getController();
+        fxmlController.signUp.setOnAction(actionEvent ->
+                        register()
+        );
         fxmlController.signIn.setOnAction(actionEvent ->
                         login()
                 );
@@ -30,5 +33,8 @@ public class LoginScene  {
         if(AuthController.login(fxmlController.userName.getText(),fxmlController.password.getText())){
             SceneManager.setScene("MAIN");
         }
+    }
+    private void register(){
+        SceneManager.setScene("REGISTER");
     }
 }

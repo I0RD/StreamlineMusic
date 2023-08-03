@@ -7,14 +7,17 @@ import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import java.awt.*;
+
 
 public class AppStage extends Application {
     private ConfigurableApplicationContext applicationContext;
-    private Scene scene;
+
     public static void main(String[] args) {
 
         launch(args);
@@ -26,14 +29,12 @@ public class AppStage extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         applicationContext.publishEvent(new StageReadyEvent(stage));
-        SceneManager sceneManager=new SceneManager();
-        scene=new Scene(sceneManager.loginScene.getLoginParent());
-        sceneManager.scene=scene;
+        SceneManager.scene = new Scene(SceneManager.loginScene.getLoginParent());
         stage.getIcons().add(new Image(new FileResourcesUtils().getFileFromResource("images/Przechwytywanie.png")));
-        stage.setHeight(400);
-        stage.setWidth(700);
+        stage.setHeight(800);
+        stage.setWidth(1280);
         stage.setTitle("Streamline Music");
-        stage.setScene(sceneManager.setScene("MAIN"));
+        stage.setScene(SceneManager.setScene("LOGIN"));
         stage.show();
     }
     @Override
