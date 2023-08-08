@@ -33,9 +33,7 @@ public class MainScene {
             HBox hBox=new HBox(ass);
             fxmlController.grid.add(hBox,0,i+1);
         }
-        fxmlController.grid.setOnMouseClicked(mouseEvent -> {
-            fxmlController.control_music.setVisible(true);
-        });
+        fxmlController.grid.setOnMouseClicked(mouseEvent -> fxmlController.control_music.setVisible(true));
     }
 
     public Parent getMainParent(){
