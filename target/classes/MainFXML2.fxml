@@ -27,7 +27,7 @@
             </GridPane>
            </content>
        </ScrollPane>
-       <HBox fx:id="control_music" prefHeight="27.0" prefWidth="1280.0" spacing="50.0">
+       <HBox fx:id="control_music" prefHeight="27.0" prefWidth="1280.0" spacing="50.0" visible="false">
            <Button text="Back" />
            <Button text="Play" />
            <Button text="forward" />

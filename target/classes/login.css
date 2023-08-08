@@ -3,7 +3,7 @@ root {
 }
 .root {
 -fx-background-image: url("images/Przechwytywanie.PNG");
--fx-background-size: fixed;
+-fx-background-size: cover;
 -fz-background-position: center center;
 -fx-background-repeat: no-repeat;
 }

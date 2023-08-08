@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="031a2fc6-e45f-4b3e-8d5c-cae9641b8c2c" name="Changes" comment="" />
+    <list default="true" id="031a2fc6-e45f-4b3e-8d5c-cae9641b8c2c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/StreamlineMusic/GUI/LoginScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/StreamlineMusic/GUI/LoginScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/StreamlineMusic/GUI/MainScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/StreamlineMusic/GUI/MainScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/StreamlineMusic/GUI/RegisterScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/StreamlineMusic/GUI/RegisterScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/LoginFXML.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MainFXML.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MainFXML2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MainFXML2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/RegisterFXML.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/RegisterFXML2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/RegisterFXML2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginFXML.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainFXML.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainFXML2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainFXML2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RegisterFXML.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RegisterFXML2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegisterFXML2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/StreamlineMusic/GUI/LoginScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/StreamlineMusic/GUI/LoginScene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/StreamlineMusic/GUI/MainScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/StreamlineMusic/GUI/MainScene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,6 +146,17 @@
       <updated>1666328318534</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

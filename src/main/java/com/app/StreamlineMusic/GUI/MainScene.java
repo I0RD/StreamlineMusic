@@ -21,8 +21,6 @@ public class MainScene {
     public MainScene(FXMLLoader fxmlLoader) throws IOException {
         mainScene=fxmlLoader.load();
         fxmlController=fxmlLoader.getController();
-        fxmlController.control_music.setDisable(true);
-        fxmlController.control_music.setVisible(false);
         List<Song> songs;
         songs=SongController.getAllSongs();
         for(int i=0;i<songs.size();i++){
@@ -36,7 +34,6 @@ public class MainScene {
             fxmlController.grid.add(hBox,0,i+1);
         }
         fxmlController.grid.setOnMouseClicked(mouseEvent -> {
-            fxmlController.control_music.setDisable(false);
             fxmlController.control_music.setVisible(true);
         });
     }
